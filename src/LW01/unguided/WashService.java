@@ -23,7 +23,6 @@ public abstract class WashService implements Billable {
     @Override
     public abstract int calculateCharge();
 
-    // Method overloading
     public int calculateCharge(int units) {
         if (units <= 0) {
             throw new IllegalArgumentException("Units must be positive.");

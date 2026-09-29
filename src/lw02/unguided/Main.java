@@ -83,14 +83,12 @@ public class Main{
 
             if (foodAvailable && drinkAvailable) {
 
-                // Reduce food stock
                 if (!food.equals("-")) {
                     int stock = Integer.parseInt(foodData[1]);
                     stock--;
                     foodData[1] = String.valueOf(stock);
                 }
 
-                // Reduce drink stock
                 if (!drink.equals("-")) {
                     int stock = Integer.parseInt(drinkData[1]);
                     stock--;
@@ -105,7 +103,6 @@ public class Main{
             }
         }
 
-        // Display successful orders
         System.out.println("=== Successfully Processed Orders ===");
 
         for (String[] order : success) {
@@ -117,21 +114,18 @@ public class Main{
             );
         }
 
-        // Display remaining food stock
         System.out.println("=== Remaining Food Stock ===");
 
         for (String[] food : foods) {
             System.out.println(food[0] + " : " + food[1]);
         }
 
-        // Display remaining drink stock
         System.out.println("=== Remaining Drink Stock ===");
 
         for (String[] drink : drinks) {
             System.out.println(drink[0] + " : " + drink[1]);
         }
 
-        // Display failed orders using Stack
         System.out.println("=== Failed Orders ===");
 
         while (!fails.isEmpty()) {

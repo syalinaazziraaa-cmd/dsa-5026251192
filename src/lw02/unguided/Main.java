@@ -105,12 +105,7 @@ public class Main{
         System.out.println("=== Successfully Processed Orders ===");
 
         for (String[] order : success) {
-            System.out.println(
-                    order[0] + " " +
-                    order[1] + " " +
-                    order[2] + " " +
-                    order[3]
-            );
+            System.out.println(order[0] + " " + order[1] + " " + order[2] + " " + order[3]);
         }
 
         System.out.println("=== Remaining Food Stock ===");
@@ -130,12 +125,7 @@ public class Main{
         while (!fails.isEmpty()) {
             String[] order = fails.pop();
 
-            System.out.println(
-                    order[0] + " " +
-                    order[1] + " " +
-                    order[2] + " " +
-                    order[3]
-            );
+            System.out.println(order[0] + " " + order[1] + " " + order[2] + " " + order[3]);
         }
     }
 }

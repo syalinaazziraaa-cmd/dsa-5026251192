@@ -98,7 +98,6 @@ public class Main{
                 success.add(order);
 
                 } else {
-                // Failed order
                 fails.push(order);
             }
         }
